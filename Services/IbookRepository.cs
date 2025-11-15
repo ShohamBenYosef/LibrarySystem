@@ -1,0 +1,13 @@
+using LibrarySystem.Models;
+
+namespace LibrarySystem.Services
+{
+    public interface IBookRepository
+    {
+        Book GetBookById(int id);
+        IEnumerable<Book> GetAllBooks();
+        void AddBook(Book book);
+        void UpdateBook(Book book);
+        void DeleteBook(int id);
+    }
+}
